@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Kono Subarashii Sekai ni Shukufuku wo!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+    <script src="js/backgrounds.json"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        window.onload = () => {
+            loadComment('konosuba');
+            prepareComments('konosuba');
+        }
+
+        $( function() {
+            $("#datepicker").datepicker();
+            $(document).tooltip();
+        });
+    </script>
+</head>
+<body>
+<div id="mainframe">
+    <div class="navbar" id="topNavbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <span>All Anime</span>
+                <span id="icon"><svg xmlns="http://www.w3.org/2000/svg" class="dropdownIcon" fill="none"
+                                     viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg></span>
+            </button>
+            <div class="dropdown-content dropdown-animation">
+                <a href="komi.html">Komi-san wa, Komyoushou desu.</a>
+                <a href="konosuba.html">Kono Subarashii Sekai ni Shukufuku wo!</a>
+                <a href="sakurasou.html">Sakurasou no Pet na Kanojo</a>
+                <a href="evangelion.html">Neon Genesis Evangelion</a>
+            </div>
+        </div>
+        <a href="https://www.filmweb.pl/serial/Kono+Subarashii+Sekai+ni+Shukufuku+o-2016-747022">Filmweb</a>
+        <a href="https://myanimelist.net/anime/30831/Kono_Subarashii_Sekai_ni_Shukufuku_wo">MyAnimeList</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+    </div>
+    <div id="firstContent">
+        <div class="secinv">
+            <div id="maintitle" class="funnyHover" onclick="toggleDescription('konosuba')">Kono Subarashii Sekai ni Shukufuku wo!</div>
+        </div>
+        <div class="placeholderPlace"></div>
+        <div class="section">
+            <div class="imgsection">
+                <a href="img/konosuba/1-min.png"><img src="img/konosuba/1-min.png" alt="test" class="secimg"></a>
+            </div>
+            <div class="textsection">
+                <div class="sectitle">Plot</div>
+                <div class="secdes"><p>
+                    After dying a laughable and pathetic death on his way back from buying a game, high school student and recluse Kazuma Satou finds himself sitting before a beautiful but obnoxious goddess named Aqua. She provides the NEET with two options: continue on to heaven or reincarnate in every gamer's dream—a real fantasy world!</p></div>
+            </div>
+        </div>
+        <div class="placeholderPlace"></div>
+        <div class="section">
+            <div class="textsection">
+                <div class="secdes"><p>
+                    Choosing to start a new life, Kazuma is quickly tasked with defeating a Demon King who is terrorizing villages. But before he goes, he can choose one item of any kind to aid him in his quest, and the future hero selects Aqua. But Kazuma has made a grave mistake—Aqua is completely useless!</p></div>
+            </div>
+            <div class="imgsection">
+                <a href="img/konosuba/2-min.png"><img src="img/konosuba/2-min.png" alt="test" class="secimg"></a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="imgsection">
+                <a href="img/konosuba/3-min.png"><img src="img/konosuba/3-min.png" alt="test" class="secimg"></a>
+            </div>
+            <div class="textsection">
+                <div class="secdes"><p>
+                    Unfortunately, their troubles don't end here; it turns out that living in such a world is far different from how it plays out in a game. Instead of going on a thrilling adventure, the duo must first work to pay for their living expenses. Indeed, their misfortunes have only just begun!</p></div>
+            </div>
+        </div>
+    </div>
+    <div class="placeholderPlace"></div>
+    <div class="subtitle">Related media</div>
+    <div id="tabela">
+        <table>
+            <tr>
+                <th>Genre</th>
+                <th>Release Date</th>
+                <th>Name</th>
+            </tr>
+            <tr>
+                <td>Light Novel</td>
+                <td>2013 - 2020</td>
+                <td><a href="https://myanimelist.net/manga/60553/Kono_Subarashii_Sekai_ni_Shukufuku_wo">Kono Subarashii Sekai ni Shukufuku wo!</a></td>
+            </tr>
+            <tr>
+                <td>Anime</td>
+                <td>2016</td>
+                <td><a href="https://myanimelist.net/anime/30831/Kono_Subarashii_Sekai_ni_Shukufuku_wo">Kono Subarashii Sekai ni Shukufuku wo!</a></td>
+            </tr>
+            <tr>
+                <td>Anime</td>
+                <td>2017</td>
+                <td><a href="https://myanimelist.net/anime/32937/Kono_Subarashii_Sekai_ni_Shukufuku_wo_2">Kono Subarashii Sekai ni Shukufuku wo! 2</a></td>
+            </tr>
+            <tr>
+                <td>Movie</td>
+                <td>2019</td>
+                <td><a href="https://myanimelist.net/anime/38040/Kono_Subarashii_Sekai_ni_Shukufuku_wo_Movie__Kurenai_Densetsu">Kono Subarashii Sekai ni Shukufuku wo! Movie: Kurenai Densetsu</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="placeholderPlace"></div>
+    <div id="gallerySection">
+        <div class="subtitle funnyHover" onclick="toggleGallery('konosuba')">Gallery</div>
+        <div class="section">
+            <div class="imgsection">
+                <a href="img/konosuba/1-min.png"><img src="img/konosuba/1-min.png" alt="test" class="secimg"></a>
+            </div>
+            <div class="imgsection">
+                <a href="img/konosuba/2-min.png"><img src="img/konosuba/2-min.png" alt="test" class="secimg"></a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="imgsection">
+                <a href="img/konosuba/3-min.png"><img src="img/konosuba/3-min.png" alt="test" class="secimg"></a>
+            </div>
+            <div class="imgsection">
+                <a href="img/konosuba/4-min.png"><img src="img/konosuba/4-min.png" alt="test" class="secimg"></a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="imgsection">
+                <a href="img/konosuba/5-min.png"><img src="img/konosuba/5-min.png" alt="test" class="secimg"></a>
+            </div>
+            <div class="imgsection">
+                <a href="img/konosuba/6-min.png"><img src="img/konosuba/6-min.png" alt="test" class="secimg"></a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="imgsection">
+                <a href="img/konosuba/7-min.png"><img src="img/konosuba/7-min.png" alt="test" class="secimg"></a>
+            </div>
+            <div class="imgsection">
+                <a href="img/konosuba/8-min.png"><img src="img/konosuba/8-min.png" alt="test" class="secimg"></a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="imgsection">
+                <a href="img/konosuba/9-min.png"><img src="img/konosuba/9-min.png" alt="test" class="secimg"></a>
+            </div>
+            <div class="imgsection">
+                <a href="img/konosuba/10-min.png"><img src="img/konosuba/10-min.png" alt="test" class="secimg"></a>
+            </div>
+        </div>
+    </div>
+    <div class="placeholderPlace"></div>
+    <div class="subtitle" id="commentTag">
+        Share a comment!
+    </div>
+    <div id="commentsPlace">
+        <div class="section">
+            <div class="commentUnitSection">
+                <div class="commentInside">
+                    <div class="commentLine">
+                        <div class="commentName">DefinitelyAGirl</div>
+                        <div class="commentGender">Female</div>
+                    </div>
+                    <div class="commentLine">
+                        <div class="commentMail">youraveragewoman@gmail.com</div>
+                        <div class="commentDate">20/04/1889</div>
+                    </div>
+                    <div class="commentLargeContent">No Sylvia pictures? Why?</div>
+                </div>
+            </div>
+            <div class="commentUnitSection">
+                <div class="commentInside">
+                    <div class="commentLine">
+                        <div class="commentName">AnimeFan05</div>
+                        <div class="commentGender">Male</div>
+                    </div>
+                    <div class="commentLine">
+                        <div class="commentMail">animefan055555@gmail.com</div>
+                        <div class="commentDate">22/01/2003</div>
+                    </div>
+                    <div class="commentLargeContent">I deeply relate to Darkness to be honest.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div id="commentSection">
+            <form method="post">
+                <label for="userName">Name:</label>
+                <input type="text" name="commentName" id="userName"><br>
+                <label for="genderFemale">Female:</label>
+                <input type="radio" name="commentGender" id="genderFemale" checked="checked">
+                <label for="genderMale">Male:</label>
+                <input type="radio" name="commentGender" id="genderMale"><br>
+                <label for="userEmail">E-Mail:</label>
+                <input type="email" name="commentEmail" id="userEmail"><br>
+                <label for="datepicker">Date Of Birth:</label>
+                <input type="text" name="dateOfBirth" id="datepicker" title="We ask for your age only for statistical purposes."><br>
+                <label for="userColor">Favourite Color:</label>
+                <input type="color" name="favouriteColor" id="userColor"><br>
+                <label for="commentArea">Comment:</label><br>
+                <textarea id="commentArea" name="commentContent" rows="5" cols="80"></textarea><br>
+                <input type="reset" value="Reset">
+                <input type="button" value="Save" onclick="setComment('konosuba')">
+                <input type="button" value="Submit" onclick="uploadComment('konosuba')">
+            </form>
+        </div>
+    </div>
+    <div class="placeholderPlace"></div>
+    <div class="section">
+        <div class="textsection"></div>
+    </div>
+    <div class="gradientPlaceholder"></div>
+    <footer id="foot">
+        <div class="footersection">
+            <div class="foottitle">
+                Quick Travel
+            </div>
+            <div class="footdescription">
+                <a href="#topNavbar">Start</a><br>
+                <a href="#maintitle">Title</a><br>
+                <a href="#tabela">Related media</a><br>
+                <a href="#gallerySection">Gallery</a><br>
+                <a href="#commentTag">Comment</a>
+            </div>
+        </div>
+        <div class="footersection">
+            <div class="foottitle">
+                Sources
+            </div>
+            <div class="footdescription">
+                <a href="https://www.myanimelist.net">myanimelist.net</a><br>
+                <a href="https://komisan.fandom.com/wiki/Komi-san_wa_Komyushou_Desu_Wiki">komisan.fandom.com</a><br>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

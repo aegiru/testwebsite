@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Komi-san wa, Komyoushou desu.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+    <script src="js/backgrounds.json"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        window.onload = () => {
+            loadComment('komi');
+            prepareComments('komi');
+        }
+
+        $(function () {
+            $("#datepicker").datepicker();
+            $(document).tooltip();
+        });
+    </script>
+</head>
+<body>
+<div id="mainframe">
+    <div class="navbar" id="topNavbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <span>All Anime</span>
+                <span id="icon"><svg xmlns="http://www.w3.org/2000/svg" class="dropdownIcon" fill="none"
+                                     viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg></span>
+            </button>
+            <div class="dropdown-content dropdown-animation">
+                <a href="komi.html">Komi-san wa, Komyoushou desu.</a>
+                <a href="konosuba.html">Kono Subarashii Sekai ni Shukufuku wo!</a>
+                <a href="sakurasou.html">Sakurasou no Pet na Kanojo</a>
+                <a href="evangelion.html">Neon Genesis Evangelion</a>
+            </div>
+        </div>
+        <a href="https://www.filmweb.pl/serial/Komi-san+wa%2C+Communication+Shougai+desu.-2021-10002419">Filmweb</a>
+        <a href="https://myanimelist.net/anime/48926/Komi-san_wa_Comyushou_desu">MyAnimeList</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+    </div>
+    <div id="firstContent">
+        <div class="secinv">
+            <div id="maintitle" class="funnyHover" onclick="toggleDescription('komi')">Komi wa, Komyushou Desu.</div>
+        </div>
+        <div class="placeholderPlace"></div>
+        <div class="section">
+            <div class="imgsection">
+                <a href="img/komi/1-min.png"><img src="img/komi/1-min.png" alt="test" class="secimg"></a>
+            </div>
+            <div class="textsection">
+                <div class="sectitle">Plot</div>
+                <div class="secdes"><p>
+                    Hitohito Tadano is an ordinary boy who heads into his first day of high school with a clear plan: to avoid trouble and do his best to blend in with others. Unfortunately, he fails right away when he takes the seat beside the school's madonna—Shouko Komi. His peers now recognize him as someone to eliminate for a chance to sit next to the most beautiful girl in class.
+                </p></div>
+            </div>
+        </div>
+        <div class="placeholderPlace"></div>
+        <div class="section">
+            <div class="textsection">
+                <div class="secdes"><p>
+                    Gorgeous and graceful with long, dark hair, Komi is universally adored and immensely popular despite her mysterious persona. However, unbeknownst to everyone, she has crippling anxiety and a communication disorder which prevents her from wholeheartedly socializing with her classmates.
+                </p></div>
+            </div>
+            <div class="imgsection">
+                <a href="img/komi/2-min.png"><img src="img/komi/2-min.png" alt="test" class="secimg"></a>
+            </div>
+        </div>
+        <div class="placeholderPlace"></div>
+        <div class="section">
+            <div class="imgsection">
+                <a href="img/komi/3-min.png"><img src="img/komi/3-min.png" alt="test" class="secimg"></a>
+            </div>
+            <div class="textsection">
+                <div class="secdes"><p>
+                    When left alone in the classroom, a chain of events forces Komi to interact with Tadano through writing on the blackboard, as if in a one-way conversation. Being the first person to realize she cannot communicate properly, Tadano picks up the chalk and begins to write as well. He eventually discovers that Komi's goal is to make one hundred friends during her time in high school. To this end, he decides to lend her a helping hand, thus also becoming her first-ever friend.
+                </p></div>
+            </div>
+        </div>
+    </div>
+    <div class="placeholderPlace"></div>
+    <div class="subtitle">Related media</div>
+    <div id="tabela">
+        <table>
+            <tr>
+                <th>Genre</th>
+                <th>Release Date</th>
+                <th>Name</th>
+            </tr>
+            <tr>
+                <td>Manga</td>
+                <td>2016 - ?</td>
+                <td><a href="https://myanimelist.net/manga/99007/Komi-san_wa_Comyushou_desu">Komi wa, Komyushou
+                    Desu.</a></td>
+            </tr>
+            <tr>
+                <td>Anime</td>
+                <td>2021 - 2022</td>
+                <td><a href="https://myanimelist.net/anime/48926/Komi-san_wa_Comyushou_desu">Komi wa, Komyushou
+                    Desu.</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="placeholderPlace"></div>
+    <div id="gallerySection">
+        <div class="subtitle funnyHover" onclick="toggleGallery('komi')">Gallery</div>
+        <div class="section">
+            <div class="imgsection">
+                <a href="img/komi/1-min.png"><img src="img/komi/1-min.png" alt="test" class="secimg"></a>
+            </div>
+            <div class="imgsection">
+                <a href="img/komi/2-min.png"><img src="img/komi/2-min.png" alt="test" class="secimg"></a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="imgsection">
+                <a href="img/komi/3-min.png"><img src="img/komi/3-min.png" alt="test" class="secimg"></a>
+            </div>
+            <div class="imgsection">
+                <a href="img/komi/4-min.png"><img src="img/komi/4-min.png" alt="test" class="secimg"></a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="imgsection">
+                <a href="img/komi/5-min.png"><img src="img/komi/5-min.png" alt="test" class="secimg"></a>
+            </div>
+            <div class="imgsection">
+                <a href="img/komi/6-min.png"><img src="img/komi/6-min.png" alt="test" class="secimg"></a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="imgsection">
+                <a href="img/komi/7-min.png"><img src="img/komi/7-min.png" alt="test" class="secimg"></a>
+            </div>
+            <div class="imgsection">
+                <a href="img/komi/8-min.png"><img src="img/komi/8-min.png" alt="test" class="secimg"></a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="imgsection">
+                <a href="img/komi/9-min.png"><img src="img/komi/9-min.png" alt="test" class="secimg"></a>
+            </div>
+            <div class="imgsection">
+                <a href="img/komi/10-min.png"><img src="img/komi/10-min.png" alt="test" class="secimg"></a>
+            </div>
+        </div>
+    </div>
+    <div class="placeholderPlace"></div>
+    <div class="subtitle" id="commentTag">
+        Share a comment!
+    </div>
+    <div id="commentsPlace">
+        <div class="section">
+            <div class="commentUnitSection">
+                <div class="commentInside">
+                    <div class="commentLine">
+                        <div class="commentName">AnimeFan05</div>
+                        <div class="commentGender">Male</div>
+                    </div>
+                    <div class="commentLine">
+                        <div class="commentMail">animefan055555@gmail.com</div>
+                        <div class="commentDate">22/01/2003</div>
+                    </div>
+                    <div class="commentLargeContent">Can't wait for Manbagi to appear!</div>
+                </div>
+            </div>
+            <div class="commentUnitSection">
+                <div class="commentInside">
+                    <div class="commentLine">
+                        <div class="commentName">DefinitelyAGirl</div>
+                        <div class="commentGender">Female</div>
+                    </div>
+                    <div class="commentLine">
+                        <div class="commentMail">youraveragewoman@gmail.com</div>
+                        <div class="commentDate">20/04/1889</div>
+                    </div>
+                    <div class="commentLargeContent">Tadano-chan is best girl!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div id="commentSection">
+            <form method="post">
+                <label for="userName">Name:</label>
+                <input type="text" name="commentName" id="userName"><br>
+                <label for="genderFemale">Female:</label>
+                <input type="radio" name="commentGender" id="genderFemale" checked="checked">
+                <label for="genderMale">Male:</label>
+                <input type="radio" name="commentGender" id="genderMale"><br>
+                <label for="userEmail">E-Mail:</label>
+                <input type="email" name="commentEmail" id="userEmail"><br>
+                <label for="datepicker">Date Of Birth:</label>
+                <input type="text" name="dateOfBirth" id="datepicker"
+                       title="We ask for your age only for statistical purposes."><br>
+                <label for="userColor">Favourite Color:</label>
+                <input type="color" name="favouriteColor" id="userColor"><br>
+                <label for="commentArea">Comment:</label><br>
+                <textarea id="commentArea" name="commentContent" rows="5" cols="80"></textarea><br>
+                <input type="reset" value="Reset">
+                <input type="button" value="Save" onclick="setComment('komi')">
+                <input type="button" value="Submit" onclick="uploadComment('komi')">
+            </form>
+        </div>
+    </div>
+    <div class="gradientPlaceholder"></div>
+    <footer id="foot">
+        <div class="footersection">
+            <div class="foottitle">
+                Quick Travel
+            </div>
+            <div class="footdescription">
+                <a href="#topNavbar">Start</a><br>
+                <a href="#maintitle">Title</a><br>
+                <a href="#tabela">Related media</a><br>
+                <a href="#gallerySection">Gallery</a><br>
+                <a href="#commentTag">Comment</a>
+            </div>
+        </div>
+        <div class="footersection">
+            <div class="foottitle">
+                Sources
+            </div>
+            <div class="footdescription">
+                <a href="https://www.myanimelist.net">myanimelist.net</a><br>
+                <a href="https://komisan.fandom.com/wiki/Komi-san_wa_Komyushou_Desu_Wiki">komisan.fandom.com</a><br>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

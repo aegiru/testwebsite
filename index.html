@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Anime Info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+    <script src="js/backgrounds.json"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body onload="imageCarousel(0,0)">
+<div id="mainframe">
+    <div class="navbar" id="topNavbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <span>All Anime</span>
+                <span id="icon"><svg xmlns="http://www.w3.org/2000/svg" class="dropdownIcon" fill="none"
+                                     viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg></span>
+            </button>
+            <div class="dropdown-content dropdown-animation">
+                <a href="komi.html">Komi-san wa, Komyoushou desu.</a>
+                <a href="konosuba.html">Kono Subarashii Sekai ni Shukufuku wo!</a>
+                <a href="sakurasou.html">Sakurasou no Pet na Kanojo</a>
+                <a href="evangelion.html">Neon Genesis Evangelion</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+    </div>
+    <div id="mainContent">
+        <div id="mainImg">
+            <div class="leftArrow" onclick="previousCategory()">
+                <div class="arrowItself">
+                    &lt;
+                </div>
+            </div>
+            <div class="rightArrow" onclick="nextCategory()">
+                <div class="arrowItself">
+                    &gt;
+                </div>
+            </div>
+            <div class="infoContainer">
+                <div id="imgTitle">Komi-san wa, Komyoushou desu.</div>
+                <div id="imgTag">Tadano Hitohito is a normal highschool newcomer, aiming to not stand out. His wonderful
+                    plan quickly comes to a close as he befriends the school's madonna and promises to help her achieve
+                    her dream.
+                </div>
+                <div id="buttonContainer">
+                    <div class="imgButton">
+                        <a class="imgButtonItself" href="komi.html">Read More</a>
+                    </div>
+                    <div class="imgButton">
+                        <a class="imgButtonItself" href="img/komi/1-min.png">Show Original Image</a>
+                    </div>
+                </div>
+                <div id="imgMenu">
+                    <div id="imgMenuLeftArrow" onclick="previousImage()">
+                        &lt;
+                    </div>
+                    <div class="imgMenuItem" onclick="changeImage(0)"></div>
+                    <div class="imgMenuItem" onclick="changeImage(1)"></div>
+                    <div class="imgMenuItem" onclick="changeImage(2)"></div>
+                    <div class="imgMenuItem" onclick="changeImage(3)"></div>
+                    <div id="imgMenuRightArrow" onclick="nextImage()">
+                        &gt;
+                    </div>
+                </div>
+            </div>
+            <div id="itemList">
+                <div class="selectedItem" onclick="changeCategory(0)"></div>
+                <div class="unselectedItem" onclick="changeCategory(1)"></div>
+                <div class="unselectedItem" onclick="changeCategory(2)"></div>
+                <div class="unselectedItem" onclick="changeCategory(3)"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
+
+
